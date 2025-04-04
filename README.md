@@ -68,3 +68,4 @@ src/
 2. **Nhập JD hoặc Upload PDF:** Bạn có thể nhập trực tiếp mô tả công việc (JD) hoặc upload file PDF chứa JD.
 3. **Chọn ngôn ngữ phỏng vấn:** Sử dụng dropdown để chọn ngôn ngữ phỏng vấn (ví dụ: Tiếng Việt, English).
 4. **Tạo câu hỏi:** Nhấn nút "Tạo câu hỏi" để tạo ra một câu hỏi phỏng vấn dựa trên JD.
+5. **Trả lời câu hỏi:** Nhập câu trả lời vào ô thoại bên dưới câu hỏi và bấm nút "Trả lời" để nhận đánh giá từ Gemini và học điểm cần cải thiện.
