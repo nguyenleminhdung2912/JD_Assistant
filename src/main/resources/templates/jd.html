@@ -56,6 +56,26 @@
     <div th:if="${questionHtml}" class="result-container">
         <div class="question-title">Câu hỏi phỏng vấn được tạo:</div>
         <pre th:text="${questionHtml}"></pre>
+
+        <!-- Ứng viên trả lời câu hỏi -->
+        <form method="post" action="/evaluate-answer" th:object="${evaluationRequest}">
+            <div class="form-group">
+                <label for="answer">Câu trả lời:</label>
+                <textarea id="answer" name="answer" rows="5" class="form-control" placeholder="Nhập câu trả lời của bạn"></textarea>
+            </div>
+            <input type="hidden" name="jdText" th:value="${jdText}" />
+            <input type="hidden" name="question" th:value="${questionHtml}" />
+            <button type="submit" class="btn btn-success">Gửi câu trả lời</button>
+        </form>
+    </div>
+
+    <!-- Hiển thị câu trả lời và đánh giá nếu có -->
+    <div th:if="${evaluationResult}" class="result-container">
+        <div class="question-title">Câu trả lời của ứng viên:</div>
+        <pre th:text="${evaluationRequest.answer}"></pre>
+        <div class="divider"></div>
+        <div class="question-title">Đánh giá:</div>
+        <pre th:text="${evaluationResult}"></pre>
     </div>
 </div>
 </body>
