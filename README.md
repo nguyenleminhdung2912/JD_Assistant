@@ -14,7 +14,7 @@ JD Assistant là một ứng dụng web giúp tạo ra các câu hỏi phỏng v
 1. **Clone Repository hoặc tải về mã nguồn:**
 
     ```bash
-    git clone [https://github.com/nguyenleminhdung2912/JD_Assistant.git](https://github.com/nguyenleminhdung2912/JD_Assistant.git)
+    git clone https://github.com/nguyenleminhdung2912/JD_Assistant.git
     cd JD_Assistant
     ```
     
